@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grok — Apresentação</title>
+<style>
+:root{--bg:#10131b;--panel:#1a2030;--cyan:#42d7f5;--purple:#7b61ff;--text:#f5f7fb;--muted:#c7cdda}
+*{box-sizing:border-box}
+body{margin:0;background:#090b11;color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.deck{width:min(100%,1100px);margin:0 auto;padding:22px}
+.slide{position:relative;min-height:610px;aspect-ratio:16/9;overflow:hidden;background:var(--bg);padding:5.5% 5%;margin:0 auto 24px;border-radius:16px;box-shadow:0 12px 40px #0007}
+.slide:before{content:"";position:absolute;width:400px;height:400px;right:-90px;top:-120px;border-radius:50%;background:#171f32;box-shadow:0 0 0 55px #20204a55,0 0 0 110px #172b4333}
+.kicker{position:relative;display:inline-block;padding:7px 13px;border-radius:20px;background:var(--cyan);color:#10131b;font-size:12px;font-weight:800;letter-spacing:.5px}
+h1{position:relative;font-size:clamp(30px,4vw,48px);margin:24px 0 10px;line-height:1.08}
+.subtitle{position:relative;color:var(--cyan);font-size:clamp(17px,2vw,23px);font-weight:700;margin:0 0 24px}
+.content{position:relative;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(170px,1fr);gap:22px;align-items:center}
+.cards{display:grid;gap:12px}
+.card{background:var(--panel);border-radius:12px;padding:15px 18px}
+.card h2{font-size:16px;color:var(--cyan);margin:0 0 7px}
+.card p{color:var(--muted);font-size:14px;line-height:1.5;margin:0}
+.art{display:flex;align-items:center;justify-content:center;min-height:230px;position:relative}
+.orb{width:130px;height:130px;border-radius:50%;background:var(--purple);position:relative;box-shadow:0 0 0 25px #7b61ff20,0 0 0 55px #42d7f510}
+.orb:before{content:"";position:absolute;width:57px;height:57px;left:15px;top:14px;background:var(--cyan);border-radius:50%}
+.orb:after{content:"";position:absolute;width:48px;height:48px;right:13px;bottom:15px;background:var(--bg);border-radius:50%}
+.orb span{position:absolute;z-index:1;left:29px;top:26px;width:10px;height:10px;border-radius:50%;background:white}
+.network{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;max-width:230px}
+.network span{background:#202b43;border:1px solid #526b91;border-radius:12px;padding:15px;color:var(--cyan);font-weight:bold}
+.footer{position:absolute;bottom:18px;left:5%;right:5%;border-top:1px solid #31394a;padding-top:10px;color:#8f9aaf;font-size:12px;display:flex;justify-content:space-between}
+.controls{position:sticky;bottom:0;display:flex;justify-content:center;align-items:center;gap:12px;background:#090b11eF;padding:14px}
+button{background:var(--cyan);color:#10131b;border:0;border-radius:9px;padding:10px 16px;font-weight:bold;cursor:pointer}
+button:disabled{opacity:.4;cursor:not-allowed}
+#counter{color:#d4d9e6;min-width:70px;text-align:center}
+@media(max-width:650px){.deck{padding:10px}.slide{min-height:700px;aspect-ratio:auto;padding:24px 20px 65px}.content{grid-template-columns:1fr}.art{min-height:130px;grid-row:1}.orb{width:90px;height:90px}.orb:before{width:40px;height:40px}.orb:after{width:35px;height:35px}.footer{left:20px;right:20px}.card p{font-size:13px}}
+@media print{body{background:white}.deck{width:100%;padding:0}.slide{display:block!important;border-radius:0;box-shadow:none;margin:0;width:100%;height:100vh;min-height:0;break-after:page;page-break-after:always}.controls{display:none}}
+</style>
+</head>
+<body>
+<main class="deck" id="deck">
+<section class="slide">
+  <span class="kicker">APRESENTAÇÃO</span><h1>GROK</h1><p class="subtitle">A inteligência artificial da xAI</p>
+  <div class="content"><div class="cards"><article class="card"><h2>Conhecendo o Grok</h2><p>Um assistente de inteligência artificial criado para conversar, responder perguntas e ajudar a explorar informações.</p></article></div><div class="art"><div class="orb"><span></span></div></div></div>
+  <div class="footer"><span>Conhecendo uma ferramenta de IA</span><span>1 / 7</span></div>
+</section>
+<section class="slide">
+  <span class="kicker">01 • CONCEITO</span><h1>O que é o Grok?</h1><p class="subtitle">Um chatbot de inteligência artificial</p>
+  <div class="content"><div class="cards">
+    <article class="card"><h2>Definição</h2><p>O Grok é um assistente de IA desenvolvido pela empresa xAI.</p></article>
+    <article class="card"><h2>Como funciona</h2><p>Ele interpreta perguntas e instruções e gera respostas em linguagem natural.</p></article>
+    <article class="card"><h2>Objetivo</h2><p>Ajudar as pessoas a entender assuntos, criar textos e encontrar caminhos para resolver tarefas.</p></article>
+  </div><div class="art"><div class="network"><span>Pergunta</span><span>IA</span><span>Resposta</span><span>Informação</span></div></div></div>
+  <div class="footer"><span>Grok • Conceito</span><span>2 / 7</span></div>
+</section>
+<section class="slide">
+  <span class="kicker">02 • CRIAÇÃO</span><h1>Quem criou o Grok?</h1><p class="subtitle">Desenvolvido pela empresa xAI</p>
+  <div class="content"><div class="cards">
+    <article class="card"><h2>Empresa</h2><p>A xAI é uma empresa de inteligência artificial fundada por Elon Musk e outros integrantes.</p></article>
+    <article class="card"><h2>Nome</h2><p>O nome “Grok” é associado à ideia de compreender algo profundamente.</p></article>
+    <article class="card"><h2>Evolução</h2><p>O serviço recebe atualizações ao longo do tempo, então seus recursos podem mudar.</p></article>
+  </div><div class="art"><div class="orb"><span></span></div></div></div>
+  <div class="footer"><span>Grok • História e desenvolvimento</span><span>3 / 7</span></div>
+</section>
+<section class="slide">
+  <span class="kicker">03 • RECURSOS</span><h1>O que ele pode fazer?</h1><p class="subtitle">Várias tarefas em uma conversa</p>
+  <div class="content"><div class="cards">
+    <article class="card"><h2>Responder</h2><p>Explicar dúvidas sobre diferentes matérias e assuntos.</p></article>
+    <article class="card"><h2>Criar e resumir</h2><p>Ajudar a organizar ideias, resumir textos e preparar rascunhos.</p></article>
+    <article class="card"><h2>Analisar</h2><p>Em versões compatíveis, interpretar imagens e trabalhar com outros tipos de conteúdo.</p></article>
+  </div><div class="art"><div class="network"><span>Texto</span><span>Imagem</span><span>Ideias</span></div></div></div>
+  <div class="footer"><span>Grok • Funcionalidades</span><span>4 / 7</span></div>
+</section>
+<section class="slide">
+  <span class="kicker">04 • INTEGRAÇÃO</span><h1>Grok e a plataforma X</h1><p class="subtitle">Conexão com conteúdos e conversas online</p>
+  <div class="content"><div class="cards">
+    <article class="card"><h2>Integração</h2><p>O Grok tem integração com a plataforma X, conhecida anteriormente como Twitter.</p></article>
+    <article class="card"><h2>Informações atuais</h2><p>Em determinados recursos, pode ajudar a consultar conteúdos recentes disponíveis na plataforma.</p></article>
+    <article class="card"><h2>Atenção</h2><p>A disponibilidade e o acesso a funções podem depender da versão, da região e do tipo de conta.</p></article>
+  </div><div class="art"><div class="network"><span>Plataforma X</span><span>Publicações</span><span>Atualizações</span></div></div></div>
+  <div class="footer"><span>Grok • Integração com o X</span><span>5 / 7</span></div>
+</section>
+<section class="slide">
+  <span class="kicker">05 • USO RESPONSÁVEL</span><h1>Vantagens e cuidados</h1><p class="subtitle">A IA ajuda, mas não é perfeita</p>
+  <div class="content"><div class="cards">
+    <article class="card"><h2>Vantagens</h2><p>Pode economizar tempo, explicar temas e ajudar a desenvolver ideias.</p></article>
+    <article class="card"><h2>Cuidados</h2><p>Pode apresentar erros, informações incompletas ou respostas desatualizadas.</p></article>
+    <article class="card"><h2>Boa prática</h2><p>Compare informações importantes com fontes confiáveis e evite compartilhar dados pessoais.</p></article>
+  </div><div class="art"><div class="network"><span>Ajuda</span><span>Verificação</span><span>Responsabilidade</span></div></div></div>
+  <div class="footer"><span>Grok • Uso responsável</span><span>6 / 7</span></div>
+</section>
+<section class="slide">
+  <span class="kicker">06 • CONCLUSÃO</span><h1>Qual é a importância do Grok?</h1><p class="subtitle">Uma ferramenta útil quando usada com senso crítico</p>
+  <div class="content"><div class="cards">
+    <article class="card"><h2>Em resumo</h2><p>O Grok mostra como a inteligência artificial pode ajudar na comunicação, na pesquisa e na criação de conteúdo.</p></article>
+    <article class="card"><h2>Mensagem final</h2><p>Usar IA não significa aceitar tudo como verdade: é importante pensar, verificar e decidir com responsabilidade.</p></article>
+  </div><div class="art"><div class="orb"><span></span></div></div></div>
+  <div class="footer"><span>Obrigado pela atenção!</span><span>7 / 7</span></div>
+</section>
+</main>
+<nav class="controls" aria-label="Controles da apresentação">
+  <button id="prev" type="button">← Anterior</button><span id="counter">1 / 7</span><button id="next" type="button">Próximo →</button><button type="button" onclick="window.print()">Imprimir / salvar PDF</button>
+</nav>
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+let current=0;
+function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,n)=>s.style.display=n===current?'block':'none');document.getElementById('counter').textContent=`${current+1} / ${slides.length}`;document.getElementById('prev').disabled=current===0;document.getElementById('next').disabled=current===slides.length-1;window.scrollTo({top:0,behavior:'smooth'});}
+document.getElementById('prev').addEventListener('click',()=>show(current-1));
+document.getElementById('next').addEventListener('click',()=>show(current+1));
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(current+1);if(e.key==='ArrowLeft')show(current-1)});
+show(0);
+</script>
+</body>
+</html>
